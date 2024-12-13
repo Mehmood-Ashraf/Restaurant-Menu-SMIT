@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Menu Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="main">
+                <h1>Restaurant Menu</h1>
+            </div>
+        </header>
+
+        <div class="buttonsGroup">
+            <button onclick="items()">All</button>
+            <button onclick="items('breakfast')">Breakfast</button>
+            <button onclick="items('Lunch')">Lunch</button>
+            <button onclick="items('Shakes')">Shakes</button>
+        </div>
+
+        <div class="buttonsGroup">
+            <input style="background: transparent; color: white; width: 400px; padding: 10px; border: 2px solid chocolate; border-radius: 5px;" placeholder="search Items" type="text" name="" id="input">
+            <button onclick="search()">Search</button>
+        </div> 
+
+
+        <div class="menuitems">
+            <div class="menu-cards" id="menuCards">
+
+            </div>
+        </div>
+
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>

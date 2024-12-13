@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: black;
+}
+
+.container{
+    background-color: black;
+    height: fit-content;
+}
+
+.main{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: chocolate;
+}
+
+.buttonsGroup{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    border: 2px solid chocolate;
+}
+
+button{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: chocolate;
+    color: black;
+    cursor: pointer;
+}
+
+.menu-cards{
+    max-width: 1240px;
+    margin-inline: auto;
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.message{
+    font-size: 48px;
+    color: chocolate;
+}
+
+.cardImage{
+    width: 250px;
+}
+
+.cardImage img{
+    width: 100%;
+    height: 100%;
+    border: 2px solid chocolate;
+    border-radius: 10px;
+}
+
+.card{
+    display: flex;
+    gap: 20px;
+    height: 120px;
+    width: 40%;
+}
+
+.menuName{
+    border-bottom: 2px solid chocolate;
+    color: chocolate;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+}
+
+.menu-content{
+    color: chocolate;
+}
+
+@media (max-width: 800px) {
+    .card{
+        width: 80%;
+    }
+
+    .menu-cards{
+        justify-content: center;
+    }
+}
