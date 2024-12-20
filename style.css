@@ -88,6 +88,9 @@ button{
 @media (max-width: 800px) {
     .card{
         width: 80%;
+        height: 100px !important;
+        flex-shrink: 0;
+        overflow: hidden;
     }
 
     .menu-cards{

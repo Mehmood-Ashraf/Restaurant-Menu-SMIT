@@ -71,6 +71,7 @@ let menuCards = document.querySelector("#menuCards");
 
 function items(category) {
     if (!category) {
+      menuCards.innerHTML = ''
     foodMenu.forEach((element) => {
       let card = document.createElement("div");
       card.classList.add("card");
